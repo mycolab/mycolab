@@ -1,6 +1,6 @@
 # mycolab
 Suite of mycology applications and tools for automating common lab workflows.
-Coauthored by Alan Rockefeller and Joseph Harrison.
+Coauthored by Alan Rockefeller and Joe Harrison.
 
 - Query BLAST
 - Curate FASTA files
