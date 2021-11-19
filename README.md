@@ -1,5 +1,5 @@
 # mycolab
-Suite of mycology application for common lab workflows.
+Suite of mycology applications and tools for automating common lab workflows.
 Co-authored by Alan Rockefeller and Joseph Harrison.
 
 - Query BLAST
