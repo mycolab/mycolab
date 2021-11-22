@@ -4,6 +4,13 @@
 Suite of mycology applications and tools for automating common lab workflows.
 Coauthored by Alan Rockefeller and Joe Harrison.
 
+- Website: https://mycolab.org
+- Email: <info@mycolab.org>
+- Github: https://github.com/mycolab
+- Discord: https://discord.gg/STW6wXaNBC
+
+###Features
+
 - Query BLAST
 - Curate FASTA files
 - Generate phylogenetic trees
