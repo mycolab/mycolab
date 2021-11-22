@@ -10,7 +10,7 @@ Coauthored by Alan Rockefeller and Joe Harrison.
 - Discord: https://discord.gg/STW6wXaNBC
 
 ----
-### Features
+## Features
 
 - Query BLAST
 - Curate FASTA files
