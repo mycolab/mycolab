@@ -9,7 +9,7 @@ Coauthored by Alan Rockefeller and Joe Harrison.
 - Github: https://github.com/mycolab
 - Discord: https://discord.gg/STW6wXaNBC
 
-###Features
+### Features
 
 - Query BLAST
 - Curate FASTA files
