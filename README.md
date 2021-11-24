@@ -1,7 +1,7 @@
 ![architecture](images/logo-s.png)  
 
 Suite of mycology applications and tools for automating common lab workflows.
-Coauthored by Alan Rockefeller and Joe Harrison.
+Coauthored by [Alan Rockefeller](https://github.com/AlanRockefeller) and [Joe Harrison](https://github.com/josephbharrison).
 
 - Website: https://mycolab.org
 - Email: <info@mycolab.org>
