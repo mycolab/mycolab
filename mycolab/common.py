@@ -4,7 +4,7 @@ from redis import StrictRedis
 from redis.exceptions import ConnectionError, ResponseError
 
 
-def redis_client(host: str = 'redis', port: int = 6379, database: int = None, timeout: int = None):
+def redis_client(host: str = 'redis', port: int = 6379, database: int = None, timeout: int = None) -> StrictRedis:
     """
     Redis client
     :return: client
@@ -16,15 +16,16 @@ def redis_client(host: str = 'redis', port: int = 6379, database: int = None, ti
             db=database,
             socket_timeout=timeout
         )
-    except ConnectionError as ex:
-        return ex, 500
+    except ConnectionError as e:
+        logging.error(e)
+        client = None
 
     return client
 
 
-def set_redis(key: str = None, value: dict = None, client: StrictRedis = None):
+def set_value(key: str = None, value: dict = None, client: StrictRedis = None):
     """
-    Update an key/value store
+    Set a value at key
     """
     response = None
     if key and value:
@@ -36,9 +37,9 @@ def set_redis(key: str = None, value: dict = None, client: StrictRedis = None):
     return response
 
 
-def get_redis(key: str = None, client: StrictRedis = None):
+def get_value(key: str = None, client: StrictRedis = None):
     """
-    Update an key/value store
+    Get a value by key
     """
     response = None
     if key:
