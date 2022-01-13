@@ -4,7 +4,7 @@ from mycolab.genbank import search as mycolab_search, split_sequence
 
 
 @click.group()
-@click.version_option("1.0.0")
+@click.version_option("1.0.3")
 def main():
     """Genbank search tool"""
     pass
