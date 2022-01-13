@@ -35,13 +35,16 @@ def split_sequence(sequence: str, max_line_len: int = 80):
     return seq_lines
 
 
-def search(sequence: str):
+def search(sequence: str, min_match: float = 95.0, max_results: int = 50):
     """
+    Search MycoLab Genbank API
     :param sequence:
+    :param min_match:
+    :param max_results:
     :return:
     """
 
-    data = {'location': True, 'match': 90, 'results': 50, "sequence": sequence}
+    data = {'location': True, 'match': min_match, 'results': max_results, "sequence": sequence}
     r = requests.post(SEARCH_URL, json=data)
     results = r.json()
 
