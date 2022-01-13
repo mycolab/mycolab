@@ -12,10 +12,11 @@ def split_sequence(sequence: str, max_line_len: int = 80):
     seq_lines = []
 
     while read_chars < seq_len:
+
         while line_len < max_line_len:
 
-            if len(full_seq) < max_line_len:
-                seq_line = ''.join(full_seq)
+            if (len(full_seq) + line_len) <= max_line_len:
+                seq_line += ''.join(full_seq)
                 read_chars = seq_len
                 break
 
