@@ -21,10 +21,10 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 setup(
     name='mycolab',
     description='Command line tools for MycoLab',
-    version='1.0.3',
-    packages=find_packages(),  # list of all packages
+    version='1.0.4',
+    packages=find_packages(),
     install_requires=install_requires,
-    python_requires='>=3.0',  # any python greater than 2.7
+    python_requires='>=3.0',
     entry_points='''
           [console_scripts]
           mycolab=mycolab.__main__:main
@@ -35,7 +35,7 @@ setup(
     long_description_content_type="text/markdown",
     license='Apache Software',
     url='https://github.com/mycolab/mycolab',
-    download_url='https://github.com/mycolab/mycolab/archive/1.0.3.tar.gz',
+    download_url='https://github.com/mycolab/mycolab/archive/1.0.4.tar.gz',
     dependency_links=dependency_links,
     author_email='joe@mycolab.org',
     classifiers=[
