@@ -21,25 +21,25 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 setup(
     name='mycolab',
     description='Command line tools for MycoLab',
-    version='1.0.0',
+    version='1.0.2',
     packages=find_packages(),  # list of all packages
     install_requires=install_requires,
     python_requires='>=3.0',  # any python greater than 2.7
     entry_points='''
           [console_scripts]
-          cver=cver.__main__:main
+          mycolab=mycolab.__main__:main
     ''',
     author="Joseph Harrison",
     keyword="mycology, lab, phylogenetic, tree, DNA, RNA",
     long_description=README,
     long_description_content_type="text/markdown",
-    license='Apache-2.0',
+    license='Apache Software',
     url='https://github.com/mycolab/mycolab',
-    download_url='https://github.com/mycolab/mycolab/archive/1.0.0.tar.gz',
+    download_url='https://github.com/mycolab/mycolab/archive/1.0.2.tar.gz',
     dependency_links=dependency_links,
     author_email='joe@mycolab.org',
     classifiers=[
-        "License :: OSI Approved :: Apache 2.0 License",
+        "License :: OSI Approved :: Apache Software License",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.8",
     ]
