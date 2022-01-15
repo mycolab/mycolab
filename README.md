@@ -8,12 +8,15 @@ Suite of mycology applications and tools for automating common lab workflows.
 - Discord: https://discord.gg/STW6wXaNBC
 
 ## Features
-
-- Query BLAST
-- Curate FASTA files
+- Add specimens
+- Search GenBank
+- Curate [FASTA](https://en.wikipedia.org/wiki/FASTA_format) files
+- Align sequences
 - Generate phylogenetic trees
-- Periodic tree updates
-- Publish results to various sites: inaturalist.org, mushroomobserver.org, etc.
+- Publish findings to various sites: 
+  - [Genbank](blast.ncbi.nlm.nih.gov/Blast.cgi)
+  - [iNaturalist](inaturalist.org)
+  - [MushroomObserver](mushroomobserver.org)
 
 ## Architecture
 ![architecture](images/architecture.png)
