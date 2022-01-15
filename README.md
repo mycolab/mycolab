@@ -14,9 +14,9 @@ Suite of mycology applications and tools for automating common lab workflows.
 - Align sequences
 - Generate phylogenetic trees
 - Publish findings to various sites: 
-  - [Genbank](blast.ncbi.nlm.nih.gov/Blast.cgi)
-  - [iNaturalist](inaturalist.org)
-  - [MushroomObserver](mushroomobserver.org)
+  - [Genbank](https://blast.ncbi.nlm.nih.gov)
+  - [iNaturalist](https://inaturalist.org)
+  - [MushroomObserver](https://mushroomobserver.org)
 
 ## Architecture
 ![architecture](images/architecture.png)
