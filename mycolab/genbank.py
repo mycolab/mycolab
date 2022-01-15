@@ -1,5 +1,6 @@
 import requests
 
+
 SEARCH_URL = "http://34.121.111.173/v1/sequences"
 
 
