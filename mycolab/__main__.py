@@ -11,7 +11,7 @@ def main():
 
 
 @main.command()
-@click.argument('sequence', required=True, help='nucleotide seqence in FASTA format')
+@click.argument('sequence', required=True, help='nucleotide sequence in FASTA format')
 @click.option('--match', default=95.0, help='Minimum match accuracy')
 @click.option('--results', default=50, help='Maximum results')
 def search(**kwargs):
