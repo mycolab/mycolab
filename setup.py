@@ -21,7 +21,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 setup(
     name='mycolab',
     description='Command line tools for MycoLab',
-    version='1.0.4',
+    version='1.0.5',
     packages=find_packages(),
     install_requires=install_requires,
     python_requires='>=3.0',

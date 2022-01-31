@@ -1,7 +1,7 @@
 import requests
 
 
-SEARCH_URL = "http://34.121.111.173/v1/sequences"
+SEARCH_URL = "http://34.121.111.173/v1/query"
 
 
 def split_sequence(sequence: str, max_line_len: int = 80):
