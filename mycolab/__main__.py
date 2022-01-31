@@ -4,14 +4,14 @@ from mycolab.genbank import search as mycolab_search, split_sequence
 
 
 @click.group()
-@click.version_option("1.0.6")
+@click.version_option("1.0.7")
 def main():
     """Genbank search tool"""
     pass
 
 
 @main.command()
-@click.argument('sequence', required=True, help='nucleotide sequence in FASTA format')
+@click.argument('sequence', required=True)
 @click.option('--match', default=95.0, help='Minimum match accuracy')
 @click.option('--results', default=50, help='Maximum results')
 def search(**kwargs):
