@@ -1,4 +1,4 @@
-![architecture](images/logo-s.png)  
+![architecture](images/mycolab-logo.svg)  
 
 Suite of mycology applications and tools for automating common lab workflows.
 
