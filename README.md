@@ -1,4 +1,4 @@
-![architecture](images/mycolab-logo.svg)  
+<a href="https://mycolab.org"><img src="https://raw.githubusercontent.com/mycolab/mycolab/master/images/mycolab-logo.svg" width="480"></a>
 
 Suite of mycology applications and tools for automating common lab workflows.
 
