@@ -1,7 +1,10 @@
 import requests
+from urllib3.exceptions import InsecureRequestWarning
+
+requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 
-SEARCH_URL = "http://34.121.111.173/v1/query"
+SEARCH_URL = "https://mycolab.org/api/genbank/v1/query"
 
 
 def split_sequence(sequence: str, max_line_len: int = 80):
@@ -52,7 +55,7 @@ def search(sequence: str, min_match: float = 95.0, max_results: int = 50):
     """
 
     data = {'location': True, 'match': min_match, 'results': max_results, "sequence": sequence}
-    r = requests.post(SEARCH_URL, json=data)
+    r = requests.post(SEARCH_URL, json=data, verify=False)
     results = r.json()
 
     return results
