@@ -1,8 +1,9 @@
-from setuptools import setup, find_packages
+import pathlib
 from io import open
 from os import path
 
-import pathlib
+from setuptools import find_packages, setup
+
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
 
@@ -21,7 +22,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 setup(
     name='mycolab',
     description='Command line tools for MycoLab',
-    version='1.0.7',
+    version='1.0.8',
     packages=find_packages(),
     install_requires=install_requires,
     python_requires='>=3.0',
